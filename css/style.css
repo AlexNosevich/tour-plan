@@ -523,8 +523,17 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  /*.navbar
+        &__search, &-menu, &__user
+            display: none*/
+  .menu-button {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
   .menu-button {
     display: -webkit-box;
@@ -555,17 +564,20 @@ template {
   .menu-button:focus {
     outline: none;
   }
-}
-
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
   }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
+  }
+  .navbar-top {
+    padding: 26px 0;
+  }
+  .logo__image {
+    height: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
