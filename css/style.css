@@ -526,12 +526,22 @@ template {
   /*.navbar
         &__search, &-menu, &__user
             display: none*/
+  .logo {
+    width: 110px;
+  }
+  .navbar__search {
+    width: 310px;
+    height: 30px;
+  }
   .menu-button {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
   .logo {
     width: 99px;
   }
