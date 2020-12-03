@@ -523,18 +523,40 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  /*.navbar
-        &__search, &-menu, &__user
-            display: none*/
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
   .logo {
     width: 110px;
   }
-  .navbar__search {
-    width: 310px;
-    height: 30px;
-  }
   .menu-button {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+  .menu-button:focus {
+    outline: none;
   }
 }
 
