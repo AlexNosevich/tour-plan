@@ -903,6 +903,10 @@ template {
   min-width: 65px;
 }
 
+.parallax-window {
+  min-height: 400px;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
@@ -931,7 +935,7 @@ template {
   background-color: #ffffff;
   border-radius: 8px;
   margin: 45px auto 0;
-  width: 731px;
+  max-width: 730px;
   padding: 0 62px 30px;
 }
 
@@ -1047,7 +1051,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
   .swiper-slide__image {
@@ -1085,15 +1089,15 @@ template {
   .swiper-container {
     max-width: 100%;
   }
-  .slider {
-    width: 100%;
-    height: 450px;
-  }
   .swiper-slide__image {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .hotel-slider {
+    width: 100%;
+    height: 450px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1115,6 +1119,9 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
   }
 }
 
@@ -1190,7 +1197,7 @@ template {
     height: 350px;
     max-width: 100%;
   }
-  .slider {
+  .hotel-slider__item {
     width: 100%;
     height: 350px;
   }
@@ -1220,6 +1227,31 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews-slider__item {
+    max-width: 580px;
+    padding: 0 30px 30px;
+  }
+  .reviews-slider__item::before {
+    display: none;
+  }
+  .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 30px;
+  }
+  .reviews-slider__button--prev {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    left: 50%;
+    margin-left: -65px;
+  }
+  .reviews-slider__button--next {
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    right: 50%;
+    margin-right: -65px;
   }
 }
 
@@ -1266,7 +1298,7 @@ template {
     height: 250px;
     max-width: 100%;
   }
-  .slider {
+  .hotel-slider__item {
     width: 100%;
     height: 250px;
   }
@@ -1298,7 +1330,7 @@ template {
     height: 172px;
     max-width: 100%;
   }
-  .slider {
+  .hotel-slider__item {
     width: 100%;
     height: 172px;
   }
@@ -1311,6 +1343,29 @@ template {
   .booking {
     min-height: 173px;
     padding: 26px 20px;
+  }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    color: #333333;
+    padding-bottom: 100px;
+  }
+  .reviews-slider__item {
+    /* display: flex
+                flex-wrap: wrap
+                flex-direction: column
+                max-width: 280px */
   }
 }
 /*# sourceMappingURL=style.css.map */
