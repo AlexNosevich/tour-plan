@@ -1,9 +1,12 @@
 @media (max-width: 1200px)
     .container
+
         max-width: 960px
     .hotel
+
         &-slider
             width: 590px
+            left: 0
     .swiper
         &-slide
             &__image
@@ -57,6 +60,7 @@
     .map
         width: 340px
     .reviews
+        padding-bottom: 60px
         &-slider
             &__item
                 max-width: 580px
@@ -68,7 +72,9 @@
     .card
         width: 340px
         height: 255px
-@media ( max-width: 767px)
+    .iframe
+        width: 340px
+@media ( max-width: 768px)
     .container
         max-width: 576px
         width: 92%
@@ -102,6 +108,7 @@
 
     .hotel
         padding-top: 0
+        padding-bottom: 60px
         &-name
             flex-basis: 100%
         &-info
@@ -142,7 +149,9 @@
             width: 92%
             align-items: flex-start
     .reviews
+        padding-bottom: 0
         &__title
+            margin-bottom: 50px
             font-weight: bold
             font-size: 30px
             line-height: 38px
@@ -178,6 +187,16 @@
     .card
         width: 49%
         height: 255px
+    .iframe
+        width: 100%
+    .activities
+        &__title
+            margin-bottom: 36px
+    .newsletter
+        height: 320px
+        &-title
+            &__strong
+                padding-bottom: 37px
 @media ( max-width: 576px )
     .navbar
         &__search, &-menu, &__user
@@ -237,7 +256,7 @@
             margin-bottom: 50px
 
         &-slider
-            height: 450px
+            height: 380px
             &__item
                 max-width: 580px
                 padding: 0 30px 30px
@@ -270,6 +289,20 @@
         height: 230px
         &__image
             width: 100%
+    .iframe
+        width: 100%
+    .activities
+        &__title
+            margin-bottom: 36px
+    .newsletter
+        height: 320px
+        &-title
+            &__strong
+                padding-bottom: 37px
+@media( max-width: 470px )
+    .reviews
+        &-slider
+            height: 450px
 @media( max-width: 320px )
     .container
         max-width: 280px
@@ -285,6 +318,7 @@
         max-width: 100%
 
     .hotel
+        padding-bottom: 40px
         &-slider
             &__item
                 width: 100%
@@ -316,3 +350,17 @@
                 padding: 0 30px 36px
     .card
         width: 100%
+        height: 255px
+    .iframe
+        width: 280px
+        height: 100%
+    .activities
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+    .newsletter
+        height: 320px
+        &-title
+            &__strong
+                padding-bottom: 37px
