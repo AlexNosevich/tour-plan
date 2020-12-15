@@ -132,7 +132,14 @@
             width: 92%
             align-items: flex-start
     .reviews
+        &__title
+            font-weight: bold
+            font-size: 30px
+            line-height: 38px
+            text-align: center
+            text-transform: uppercase
         &-slider
+
             &__item
                 max-width: 580px
                 padding: 0 30px 30px
@@ -141,15 +148,16 @@
                 &::after
                     display: none
             &__button
-                top: 30px
+                /*top: 30px*/
 
                 &--prev
-                    transform: translate(-50%, 0)
-                    left: 50%
+                    /*transform: translate(-50%, 0)*/
+                    left: 10%
                     margin-left: -65px
+
                 &--next
-                    transform: translate(50%, 0)
-                    right: 50%
+                    /*transform: translate(50%, 0)*/
+                    right: 10%
                     margin-right: -65px
 @media ( max-width: 576px )
     .navbar
@@ -207,8 +215,27 @@
             text-transform: uppercase
             color: #333333
             margin-bottom: 50px
+
         &-slider
             height: 512px
+            &__item
+                max-width: 580px
+                padding: 0 30px 30px
+                &::before
+                    display: none
+                &::after
+                    display: none
+            &__button
+                top: 30px
+
+                &--prev
+                    transform: translate(-50%, 0)
+                    left: 50%
+                    margin-left: -85px
+                &--next
+                    transform: translate(50%, 0)
+                    right: 50%
+                    margin-right: -85px
             &__item
                 padding: 0 30px 36px
 
@@ -241,6 +268,8 @@
         padding: 26px 20px
     .reviews
         &__title
+            width: 245px
+            margin: auto
             font-weight: bold
             font-size: 18px
             line-height: 23px
@@ -250,5 +279,7 @@
             margin-bottom: 42px
         &-slider
             height: 512px
+            &__text
+                text-align: left
             &__item
                 padding: 0 30px 36px
