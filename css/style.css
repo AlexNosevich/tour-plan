@@ -1453,8 +1453,6 @@ template {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
   width: 350px;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -1526,6 +1524,10 @@ template {
   .package-4, .package-5 {
     width: 310px;
     height: 415px;
+  }
+  .package-4 {
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .package__image-big {
     width: 50%;
