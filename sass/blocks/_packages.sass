@@ -1,0 +1,155 @@
+.packages
+    &__title
+        margin-bottom: 65px
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: #333333
+
+.package
+
+    &__info
+        margin-left: auto
+        margin-right: auto
+    &__name
+        margin-top: 6px
+        margin-bottom: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        color: #fff
+    &__paragraph
+        width: 300px
+        margin-top: 27px
+        margin-bottom: 34px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160.6%
+        color: #FFFFFF
+    &__description
+        margin-left: 15px
+
+    &__stars
+        margin-top: 47px
+        height: 8px
+    &__text
+        display: flex
+        color: #fff
+        font-style: normal
+        margin-bottom: 11px
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+    &__old
+        display: block
+        margin-top: 24px
+        margin-bottom: 10px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+        color: #FFFFFF
+    &__pricetag
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+
+        color: #FFFFFF
+
+    &__price
+
+        display: flex
+        justify-content: space-between
+
+    &__button
+        background: #EC1F46
+
+        border-radius: 4px
+        padding: 10px 26px
+        border: none
+        cursor: pointer
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        right: 0
+        bottom: 26px
+        color: #FFFFFF
+    &__button:focus
+        outline: none
+    &__offer-big
+
+        position: absolute
+        margin-top: 26px
+        padding: 8px 10px
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        overflow: hidden
+        line-height: 15px
+        border-radius: 0px 4px 4px 0px
+        color: #FFFFFF
+        background: #EC1F46
+.grid-container
+    display: grid
+
+    height: 1030px
+    align-self: end
+    grid-template-areas: "package-1 package-1 package-2" "package-1 package-1 package-2" "package-3 package-4 package-5"
+    justify-content: space-between
+    align-content: space-between
+    grid-template-rows: repeat(3, 200px)
+    grid-template-columns: repeat(3, 1fr)
+    max-width: 1110px
+
+.package-1
+    display: flex
+    width: 730px
+    height: 500px
+    grid-area: package-1
+    overflow: hidden
+    border-radius: 0px 8px 8px 0px
+
+    background-color: #0A223D
+.package-2
+    height: 500px
+    justify-self: end
+    width: 350px
+    right: 0
+    grid-area: package-2
+    overflow: hidden
+    border-radius: 4px
+
+.package-3
+    align-self: end
+    height: 500px
+    width: 350px
+    grid-area: package-3
+    overflow: hidden
+    border-radius: 4px
+
+.package-4
+    align-self: end
+    justify-self: center
+    width: 350px
+    grid-area: package-4
+    overflow: hidden
+    border-radius: 4px
+
+    height: 500px
+
+.package-5
+    height: 500px
+    align-self: end
+    justify-self: end
+    width: 350px
+    grid-area: package-5
+    overflow: hidden
+    border-radius: 4px
