@@ -15,6 +15,164 @@
     .card
         width: 230px
         height: 230px
+    .grid-container
+        display: grid
+        border: none
+        height: 850px
+        align-self: end
+        grid-template-areas: "package-1 package-1 package-2" "package-1 package-1 package-2" "package-3 package-4 package-5"
+        justify-content: space-between
+        align-content: space-between
+        grid-template-rows: repeat(3, 200px)
+        grid-template-columns: repeat(3, 1fr)
+        max-width: 960px
+        margin-bottom: 70px
+    .package-1
+        width: 635px
+        height: 415px
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 310px
+        height: 415px
+    .package
+        &__image-big
+            width: 50%
+            border-radius: 8px
+            overflow: hidden
+        &__image
+            width: 100%
+            height: 50%
+            border-radius: 8px
+        &__info-big
+            margin-left: auto
+            margin-right: auto
+        &__info
+            margin-left: 32px
+            margin-right: 21px
+        &__name-big
+            margin-top: 6px
+            margin-bottom: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+        &__name
+            margin-top: 15px
+            margin-bottom: 15px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #FFFFFF
+        &__paragraph
+            width: 250px
+            margin-top: 27px
+            margin-bottom: 34px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+        &__description-big
+            margin-left: 15px
+        &__description
+            margin-left: 15px
+
+        &__stars-big
+            margin-top: 27px
+            height: 8px
+        &__text-big
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 11px
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &__text
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 11px
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+        &__old-big
+            display: block
+            margin-top: 34px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            color: #FFFFFF
+        &__old
+            display: block
+            margin-top: 10px
+            margin-bottom: 0px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+
+            text-decoration-line: line-through
+
+            color: #FFFFFF
+        &__pricetag-big
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+
+            color: #FFFFFF
+        &__pricetag
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+
+            color: #FFFFFF
+
+        &__price-big
+
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__price
+            align-items: center
+            display: flex
+            justify-content: space-between
+
+        &__button-big
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 10px 26px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__button
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 8px 20px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 12px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -60,7 +218,9 @@
     .map
         width: 340px
     .reviews
-        padding-bottom: 60px
+        &__title
+            font-size: 30px
+            padding-bottom: -10px
         &-slider
             &__item
                 max-width: 580px
@@ -74,7 +234,201 @@
         height: 255px
     .iframe
         width: 340px
-@media ( max-width: 768px)
+    .packages
+        &__title
+            margin-bottom: 45px
+            margin-top: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 45px
+            text-align: center
+            text-transform: uppercase
+            color: #333333
+    .grid-container
+        display: grid
+        border: none
+        height: 650px
+        align-self: end
+        grid-template-areas: "package-1 package-1 package-2" "package-1 package-1 package-2" "package-3 package-4 package-5"
+        justify-content: space-between
+        align-content: space-between
+        grid-template-rows: repeat(3, 200px)
+        grid-template-columns: repeat(3, 1fr)
+        max-width: 700px
+        margin-bottom: 70px
+    .package-1
+        width: 460px
+        height: 315px
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 220px
+        height: 315px
+    .package
+        &__image-big
+            width: 50%
+            border-radius: 8px
+            overflow: hidden
+        &__image
+            height: 50%
+            border-radius: 8px
+        &__info-big
+            margin-left: auto
+            margin-right: auto
+        &__info
+            margin-left: 32px
+            margin-right: 21px
+        &__name-big
+            margin-top: 6px
+            margin-bottom: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+        &__name
+            margin-top: 10px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #FFFFFF
+        &__paragraph
+            width: 200px
+            margin-top: 15px
+            margin-bottom: 20px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+        &__description-big
+            margin-left: 15px
+        &__description
+            margin-left: 15px
+
+        &__stars-big
+            margin-top: 20px
+            height: 8px
+        &__text-big
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 7px
+            font-weight: normal
+            font-size: 10px
+            line-height: 15px
+        &__text
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 7px
+            font-weight: normal
+            font-size: 7px
+            line-height: 15px
+        &__old-big
+            display: none
+            margin-top: 24px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            color: #FFFFFF
+        &__old
+            display: none
+            margin-top: 10px
+            margin-bottom: 0px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+
+            text-decoration-line: line-through
+
+            color: #FFFFFF
+        &__pricetag-big
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 30px
+
+            color: #FFFFFF
+        &__pricetag
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 30px
+
+            color: #FFFFFF
+
+        &__price-big
+
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__price
+            align-items: center
+            display: flex
+            justify-content: space-between
+
+        &__button-big
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 8px 18px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__button
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 8px 12px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__offer-big
+
+            position: absolute
+            margin-top: 26px
+            padding: 6px 8px
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
+        &__offer
+            position: absolute
+            margin-top: 26px
+            padding: 4px 10px
+            font-style: normal
+            font-weight: 600
+            font-size: 8px
+            line-height: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
+@media ( max-width: 767px)
     .container
         max-width: 576px
         width: 92%
@@ -202,6 +556,237 @@
     .card
 
         height: 255px
+    .packages
+        &__title
+            margin-bottom: 45px
+            margin-top: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 45px
+            text-align: center
+            text-transform: uppercase
+            color: #333333
+    .grid-container
+        display: grid
+        border: none
+        height: 650px
+        align-self: end
+        grid-template-areas: "package-1 package-1 package-2"  "package-3 package-4 package-5"
+        gap: 20px 0
+        justify-content: space-between
+        align-content: space-between
+        grid-template-rows: repeat(3, 315px)
+        grid-template-columns: repeat(3, 1fr)
+        max-width: 576px
+        margin-bottom: 70px
+    .package-1
+        width: 380px
+        height: 315px
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 180px
+        height: 315px
+    .package
+        &__image-big
+            width: 50%
+            border-radius: 8px
+            overflow: hidden
+        &__image
+            height: 50%
+            border-radius: 8px
+        &__info-big
+            margin-left: auto
+            margin-right: auto
+        &__info
+            margin-left: 16px
+            margin-right: 18px
+        &__name-big
+            margin-top: 6px
+            margin-bottom: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+        &__name
+            margin-top: 10px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 23px
+            color: #FFFFFF
+        &__paragraph
+            width: 180px
+            height: 120px
+            overflow: scroll
+            margin-top: 10px
+            margin-bottom: 20px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+        &__description-big
+            margin-left: 10px
+        &__description
+            margin-left: 10px
+
+        &__stars-big
+            margin-top: 20px
+            height: 8px
+        &__text-big
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 5px
+            font-weight: normal
+            font-size: 10px
+            line-height: 15px
+        &__text
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 7px
+            font-weight: normal
+            font-size: 7px
+            line-height: 15px
+        &__old-big
+            display: none
+            margin-top: 24px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            color: #FFFFFF
+        &__old
+            display: none
+            margin-top: 10px
+            margin-bottom: 0px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+
+            text-decoration-line: line-through
+
+            color: #FFFFFF
+        &__pricetag-big
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 30px
+
+            color: #FFFFFF
+        &__pricetag
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 30px
+
+            color: #FFFFFF
+
+        &__price-big
+
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__price
+            align-items: center
+            display: flex
+            justify-content: space-between
+
+        &__button-big
+            background: #EC1F46
+            margin-right: 5px
+            border-radius: 4px
+            padding: 6px 8px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__button
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 4px 8px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__offer-big
+
+            position: absolute
+            margin-top: 26px
+            padding: 6px 8px
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
+        &__offer
+            position: absolute
+            margin-top: 26px
+            padding: 4px 10px
+            font-style: normal
+            font-weight: 600
+            font-size: 8px
+            line-height: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
+@media ( max-width: 625px )
+    .grid-container
+        display: grid
+        border: none
+        height: 650px
+        align-self: end
+        grid-template-areas: "package-1 package-1 package-2" "package-3 package-4 package-5"
+        justify-content: space-between
+        align-content: space-between
+        grid-template-rows: repeat(3, 315px)
+        grid-template-columns: repeat(3, 1fr)
+        max-width: 576px
+        margin-bottom: 70px
+    .package-1
+        width: 98%
+        height: 315px
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 94%
+        height: 315px
+    .package
+        &__paragraph
+            width: 160px
+            height: 130px
+            overflow: scroll
+            margin-top: 10px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+        &__stars-big
+            margin-top: 15px
 @media ( max-width: 576px )
     .navbar
         &__search, &-menu, &__user
@@ -304,10 +889,297 @@
         &-title
             &__strong
                 padding-bottom: 37px
+    .packages
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        &__title
+            margin-bottom: 45px
+            margin-top: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 30px
+            line-height: 45px
+            text-align: center
+            text-transform: uppercase
+            color: #333333
+    .grid-container
+        display: grid
+
+        border: none
+        height: 1000px
+        align-self: end
+        grid-template-areas: "package-1 package-1" "package-2 package-3" "package-4 package-5"
+        justify-content: space-between
+        align-content: space-between
+        gap: 0px 0
+        grid-template-rows: repeat(2, 315px)
+        grid-template-columns: repeat(2, 1fr)
+        max-width: 530px
+        margin-bottom: 70px
+    .package-1
+        margin: auto
+        width: 97%
+        height: 315px
+    .package-2
+        justify-self: center
+    .package-3
+        align-self: start
+        justify-self: center
+    .package-5
+        justify-self: center
+
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 95%
+        height: 315px
+
+    .package
+        &__image-big
+            width: 50%
+            border-radius: 8px
+            overflow: hidden
+        &__image
+            height: 50%
+            border-radius: 8px
+        &__info-big
+            margin-left: auto
+            margin-right: auto
+        &__info
+            margin-left: 16px
+            margin-right: 18px
+        &__name-big
+            margin-top: 6px
+            margin-bottom: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+        &__name
+            margin-top: 10px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 23px
+            color: #FFFFFF
+        &__paragraph
+            width: 180px
+            height: 120px
+            overflow: scroll
+            margin-top: 10px
+            margin-bottom: 20px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+        &__description-big
+            margin-left: 10px
+        &__description
+            margin-left: 10px
+
+        &__stars-big
+            margin-top: 20px
+            height: 8px
+        &__text-big
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 5px
+            font-weight: normal
+            font-size: 10px
+            line-height: 15px
+        &__text
+            display: flex
+            color: #fff
+            font-style: normal
+            margin-bottom: 7px
+            font-weight: normal
+            font-size: 7px
+            line-height: 15px
+        &__old-big
+            display: none
+            margin-top: 24px
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            text-decoration-line: line-through
+            color: #FFFFFF
+        &__old
+            display: none
+            margin-top: 10px
+            margin-bottom: 0px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+
+            text-decoration-line: line-through
+
+            color: #FFFFFF
+        &__pricetag-big
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 30px
+
+            color: #FFFFFF
+        &__pricetag
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 30px
+
+            color: #FFFFFF
+
+        &__price-big
+
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__price
+            align-items: center
+            display: flex
+            justify-content: space-between
+
+        &__button-big
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 8px 14px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__button
+            background: #EC1F46
+
+            border-radius: 4px
+            padding: 4px 8px
+            border: none
+            cursor: pointer
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            line-height: 19px
+            right: 0
+            bottom: 26px
+            color: #FFFFFF
+        &__offer-big
+
+            position: absolute
+            margin-top: 26px
+            padding: 6px 8px
+            font-style: normal
+            font-weight: 600
+            font-size: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
+        &__offer
+            position: absolute
+            margin-top: 26px
+            padding: 4px 10px
+            font-style: normal
+            font-weight: 600
+            font-size: 8px
+            line-height: 10px
+            overflow: hidden
+            line-height: 15px
+            border-radius: 0px 4px 4px 0px
+            color: #FFFFFF
+            background: #EC1F46
 @media( max-width: 470px )
+    .package-2, .package-3,
+    .package-4, .package-5
+        width: 92%
+        height: 315px
+    .package
+        &__paragraph
+            width: 160px
+            height: 100px
+            overflow: scroll
+            margin-top: 10px
+            margin-bottom: 20px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 160.6%
+            color: #FFFFFF
+
+    .package-1
+        margin: auto
+        width: 95%
+        height: 315px
+    .package-2
+        justify-self: center
+    .package-3
+        align-self: start
+        justify-self: center
+    .package-5
+        justify-self: center
     .reviews
         &-slider
             height: 450px
+
+@media( max-width: 400px )
+
+    .package
+        &__paragraph
+            display: none
+
+        &__name-big
+            height: 20px
+            margin-bottom: 0
+            margin-top: 15px
+            font-size: 20px
+        &__name
+            width: 110px
+        &__pricetag
+            font-size: 10px
+        &__button
+            font-size: 8px
+            padding: 2px 6px
+        &__price-big
+            width: 100%
+            justify-content: space-around
+        &__info-big
+            margin: auto
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+
+        &__image-big
+            height: 50%
+            width: 100%
+            object-fit: cover
+        &__stars-big
+            display: none
+        &__name-big
+            font-size: 14px
+        &__pricetag-big
+            font-size: 18px
+    .package-1
+        display: flex
+        flex-direction: column
+
+        width: 95%
+        height: 315px
+    .packages
+        &__container
+            height: 1100px
+            margin-bottom: 15px
 @media( max-width: 320px )
     .container
         max-width: 280px
@@ -369,3 +1241,14 @@
         &-title
             &__strong
                 padding-bottom: 37px
+
+    .package
+        &__name-big
+            margin-bottom: 5px
+    .packages
+        &__container
+            height: 1100px
+            margin-bottom: 5px
+        &__title
+            font-size: 18px
+            margin-bottom: 20px

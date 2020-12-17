@@ -10,11 +10,17 @@
         color: #333333
 
 .package
+    &__image-big
+        border-radius: 0px 8px 8px 0px
+        overflow: hidden
 
-    &__info
+    &__info-big
         margin-left: auto
         margin-right: auto
-    &__name
+    &__info
+        margin-left: 32px
+        margin-right: 21px
+    &__name-big
         margin-top: 6px
         margin-bottom: 0
         font-style: normal
@@ -22,6 +28,14 @@
         font-size: 18px
         line-height: 23px
         color: #fff
+    &__name
+        margin-top: 30px
+        margin-bottom: 23px
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        color: #FFFFFF
     &__paragraph
         width: 300px
         margin-top: 27px
@@ -31,12 +45,22 @@
         font-size: 14px
         line-height: 160.6%
         color: #FFFFFF
+    &__description-big
+        margin-left: 15px
     &__description
         margin-left: 15px
 
-    &__stars
+    &__stars-big
         margin-top: 47px
         height: 8px
+    &__text-big
+        display: flex
+        color: #fff
+        font-style: normal
+        margin-bottom: 11px
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
     &__text
         display: flex
         color: #fff
@@ -45,15 +69,34 @@
         font-weight: normal
         font-size: 12px
         line-height: 15px
-    &__old
+    &__old-big
         display: block
-        margin-top: 24px
-        margin-bottom: 10px
+        margin-top: 34px
+        margin-bottom: 20px
         font-style: normal
         font-weight: normal
         font-size: 14px
         line-height: 18px
         text-decoration-line: line-through
+        color: #FFFFFF
+    &__old
+        display: block
+        margin-top: 24px
+        margin-bottom: 5px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+
+        text-decoration-line: line-through
+
+        color: #FFFFFF
+    &__pricetag-big
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+
         color: #FFFFFF
     &__pricetag
         font-style: normal
@@ -63,11 +106,30 @@
 
         color: #FFFFFF
 
+    &__price-big
+        margin-top: 10px
+        display: flex
+        align-items: center
+        justify-content: space-between
     &__price
-
+        align-items: center
         display: flex
         justify-content: space-between
 
+    &__button-big
+        background: #EC1F46
+
+        border-radius: 4px
+        padding: 10px 26px
+        border: none
+        cursor: pointer
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        right: 0
+        bottom: 26px
+        color: #FFFFFF
     &__button
         background: #EC1F46
 
@@ -82,6 +144,8 @@
         right: 0
         bottom: 26px
         color: #FFFFFF
+    &__button-big:focus
+        outline: none
     &__button:focus
         outline: none
     &__offer-big
@@ -97,35 +161,53 @@
         border-radius: 0px 4px 4px 0px
         color: #FFFFFF
         background: #EC1F46
+    &__offer
+        position: absolute
+        margin-top: 26px
+        padding: 4px 10px
+        font-style: normal
+        font-weight: 600
+        font-size: 8px
+        line-height: 10px
+        overflow: hidden
+        line-height: 15px
+        border-radius: 0px 4px 4px 0px
+        color: #FFFFFF
+        background: #EC1F46
+
 .grid-container
     display: grid
-
+    border: none
     height: 1030px
     align-self: end
-    grid-template-areas: "package-1 package-1 package-2" "package-1 package-1 package-2" "package-3 package-4 package-5"
+    grid-template-areas: "package-1 package-1 package-2"  "package-3 package-4 package-5"
     justify-content: space-between
     align-content: space-between
-    grid-template-rows: repeat(3, 200px)
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 500px)
+    grid-template-columns: repeat(2, 1fr)
     max-width: 1110px
-
+    margin-bottom: 70px
 .package-1
     display: flex
     width: 730px
     height: 500px
     grid-area: package-1
     overflow: hidden
-    border-radius: 0px 8px 8px 0px
+    border-radius: 8px
 
     background-color: #0A223D
 .package-2
+
     height: 500px
     justify-self: end
     width: 350px
-    right: 0
+
     grid-area: package-2
     overflow: hidden
-    border-radius: 4px
+
+    border-radius: 8px
+
+    background-color: #0A223D
 
 .package-3
     align-self: end
@@ -133,7 +215,9 @@
     width: 350px
     grid-area: package-3
     overflow: hidden
-    border-radius: 4px
+    border-radius: 8px
+
+    background-color: #0A223D
 
 .package-4
     align-self: end
@@ -141,7 +225,9 @@
     width: 350px
     grid-area: package-4
     overflow: hidden
-    border-radius: 4px
+    border-radius: 8px
+
+    background-color: #0A223D
 
     height: 500px
 
@@ -152,4 +238,6 @@
     width: 350px
     grid-area: package-5
     overflow: hidden
-    border-radius: 4px
+    border-radius: 8px
+
+    background-color: #0A223D
