@@ -514,26 +514,50 @@
             text-align: center
             text-transform: uppercase
         &-slider
-
+            height: 420px
+            //&__text
+                //width: 400px
+               // margin-left: 0
+               // margin-right: 0
+            &__text
+                padding-bottom: 24px
             &__item
-                max-width: 580px
-                padding: 0 30px 30px
+                position: relative
+                display: flex
+                flex-direction: column
+                align-items: center
+                background-color: #ffffff
+                border-radius: 8px
+                margin: 0 auto
+                //margin-bottom: 45px
+                max-width: 730px
+                padding: 0 62px 0px
+                margin-top: 50px
+                margin-right: 60px
+                margin-left: 60px
                 &::before
                     display: none
                 &::after
                     display: none
             &__button
-                /*top: 30px*/
-
-                &--prev
-                    /*transform: translate(-50%, 0)*/
-                    left: 10%
-                    margin-left: -65px
-
+                position: absolute
+                top: 45%
+                transform: translateY(-50%)
+                background-repeat: no-repeat
+                width: 30px
+                height: 30px
+                background-size: 10px
+                background-position: center
+                border: none
+                background-color: transparent
+                cursor: pointer
+                z-index: 99
                 &--next
-                    /*transform: translate(50%, 0)*/
-                    right: 10%
-                    margin-right: -65px
+                    background-image: url(../img/arrow-next-secondary.svg)
+                    right: 18px
+                &--prev
+                    background-image: url(../img/arrow-prev-secondary.svg)
+                    left: 18px
     .activities
         padding-top: 40px
         &-wrapper
@@ -848,16 +872,25 @@
             margin-bottom: 50px
 
         &-slider
-            height: 380px
+            height: 372px
             &__item
                 max-width: 580px
+                margin: 0 auto
                 padding: 0 30px 30px
+                margin-top: 50px
                 &::before
                     display: none
                 &::after
                     display: none
+
+            &__text
+
+                padding-bottom: 0
+
             &__button
-                top: 30px
+
+                top: 35px
+                z-index: 99
 
                 &--prev
                     transform: translate(-50%, 0)
@@ -867,8 +900,7 @@
                     transform: translate(50%, 0)
                     right: 50%
                     margin-right: -85px
-            &__item
-                padding: 0 30px 36px
+
     .activities
         padding-top: 40px
         padding-bottom: 60px
@@ -1133,7 +1165,7 @@
         justify-self: center
     .reviews
         &-slider
-            height: 450px
+            height: 400px
 
 @media( max-width: 400px )
 
@@ -1182,6 +1214,9 @@
         &__container
             height: 1100px
             margin-bottom: 15px
+    .reviews
+        &-slider
+            height: 450px
 @media( max-width: 320px )
     .container
         max-width: 280px
@@ -1223,6 +1258,7 @@
             margin-bottom: 42px
         &-slider
             height: 512px
+
             &__text
                 text-align: left
             &__item
@@ -1237,6 +1273,7 @@
         &__title
             font-size: 18px
             line-height: 23px
+            margin-top: 30px
             margin-bottom: 36px
     .newsletter
         height: 320px
