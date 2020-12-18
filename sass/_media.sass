@@ -26,7 +26,7 @@
         grid-template-rows: repeat(3, 200px)
         grid-template-columns: repeat(3, 1fr)
         max-width: 960px
-        margin-bottom: 70px
+        //margin-bottom: 70px
     .package-1
         width: 635px
         height: 415px
@@ -222,7 +222,7 @@
     .reviews
         &__title
             font-size: 30px
-            padding-bottom: -10px
+            margin-bottom: 50px
         &-slider
             &__item
                 max-width: 580px
@@ -258,7 +258,7 @@
         grid-template-rows: repeat(3, 200px)
         grid-template-columns: repeat(3, 1fr)
         max-width: 700px
-        margin-bottom: 70px
+        //margin-bottom: 70px
     .package-1
         width: 460px
         height: 315px
@@ -602,10 +602,10 @@
         gap: 20px 0
         justify-content: space-between
         align-content: space-between
-        grid-template-rows: repeat(3, 315px)
+        grid-template-rows: repeat(2, 315px)
         grid-template-columns: repeat(3, 1fr)
         max-width: 576px
-        margin-bottom: 70px
+        margin-bottom: 40px
     .package-1
         width: 380px
         height: 315px
@@ -788,10 +788,10 @@
         grid-template-areas: "package-1 package-1 package-2" "package-3 package-4 package-5"
         justify-content: space-between
         align-content: space-between
-        grid-template-rows: repeat(3, 315px)
+        grid-template-rows: repeat(2, 315px)
         grid-template-columns: repeat(3, 1fr)
         max-width: 576px
-        margin-bottom: 70px
+        //margin-bottom: 70px
     .package-1
         width: 98%
         height: 315px
@@ -924,9 +924,12 @@
             &__strong
                 padding-bottom: 37px
     .packages
+        height: 1090px
         display: flex
         flex-direction: row
         justify-content: space-between
+        &-container
+            height: 970px
         &__title
             margin-bottom: 45px
             margin-top: 0
@@ -941,7 +944,7 @@
         display: grid
 
         border: none
-        height: 1000px
+        height: 960px
         align-self: end
         grid-template-areas: "package-1 package-1" "package-2 package-3" "package-4 package-5"
         justify-content: space-between
@@ -950,7 +953,7 @@
         grid-template-rows: repeat(2, 315px)
         grid-template-columns: repeat(2, 1fr)
         max-width: 530px
-        margin-bottom: 70px
+        //margin-bottom: 70px
     .package-1
         margin: auto
         width: 97%
@@ -1135,6 +1138,48 @@
             color: #FFFFFF
             background: #EC1F46
 @media( max-width: 470px )
+    .newsletter
+        position: relative
+        padding-top: 0
+        padding-bottom: 0
+        background-image: url(../img/newsletter-bg.jfif)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        height: 320px
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            width: 100%
+            height: 320px
+            background-color: rgba(10, 34, 61, 0.8)
+        &-wrapper
+            position: relative
+            max-width: 731px
+            display: flex
+            align-items: center
+            margin: auto
+            justify-content: space-between
+        &-title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            display: block
+            padding-top: 76px
+            &__strong
+                padding-bottom: 0
+                margin-top: 5px
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+    .navbar
+        &__subscribe
+            margin-top: 37px
     .package-2, .package-3,
     .package-4, .package-5
         width: 92%
@@ -1168,7 +1213,48 @@
             height: 400px
 
 @media( max-width: 400px )
-
+    .newsletter
+        position: relative
+        padding-top: 0
+        padding-bottom: 0
+        background-image: url(../img/newsletter-bg.jfif)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        height: 320px
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            width: 100%
+            height: 320px
+            background-color: rgba(10, 34, 61, 0.8)
+        &-wrapper
+            position: relative
+            max-width: 731px
+            display: flex
+            align-items: center
+            margin: auto
+            justify-content: space-between
+        &-title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            display: block
+            padding-top: 76px
+            &__strong
+                padding-bottom: 0
+                margin-top: 5px
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+    .navbar
+        &__subscribe
+            margin-top: 37px
     .package
         &__paragraph
             display: none
@@ -1211,12 +1297,28 @@
         width: 95%
         height: 315px
     .packages
+        height: 1790px
         &__container
-            height: 1100px
-            margin-bottom: 15px
+            //height: 1400px
+            margin-bottom: 0px
+            margin-top: 0
     .reviews
         &-slider
             height: 450px
+
+    .grid-container
+        display: grid
+
+        border: none
+        min-height: 1660px
+        align-self: end
+        grid-template-areas: "package-1 package-1" "package-2 package-2" "package-3 package-3" "package-4 package-4" "package-5 package-5"
+        justify-content: space-between
+        align-content: space-between
+        gap: 15px 0
+        grid-template-rows: repeat(5, 315px)
+        grid-template-columns: repeat(2, 1fr)
+        max-width: 530px
 @media( max-width: 320px )
     .container
         max-width: 280px
@@ -1276,18 +1378,56 @@
             margin-top: 30px
             margin-bottom: 36px
     .newsletter
+        position: relative
+        padding-top: 0
+        padding-bottom: 0
+        background-image: url(../img/newsletter-bg.jfif)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
         height: 320px
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            width: 100%
+            height: 320px
+            background-color: rgba(10, 34, 61, 0.8)
+        &-wrapper
+            position: relative
+            max-width: 731px
+            display: flex
+            align-items: center
+            margin: auto
+            justify-content: space-between
         &-title
+            font-weight: 300
+            font-size: 20px
+            line-height: 25px
+            display: block
+            padding-top: 76px
             &__strong
-                padding-bottom: 37px
+                padding-bottom: 0
+                margin-top: 5px
+                font-style: normal
+                font-weight: 600
+                font-size: 30px
+                line-height: 38px
+    .navbar
+        &__subscribe
+            margin-top: 37px
 
     .package
         &__name-big
             margin-bottom: 5px
     .packages
+        height: 1765px
         &__container
-            height: 1100px
-            margin-bottom: 5px
+            //height: 1100px
+            //margin-bottom: 5px
         &__title
             font-size: 18px
             margin-bottom: 20px
