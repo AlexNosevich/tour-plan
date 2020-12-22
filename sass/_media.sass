@@ -893,8 +893,41 @@
             margin-top: 15px
 @media ( max-width: 576px )
     .navbar
-        &__search, &-menu, &__user
+        &__user, &__search
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: flex
+        &__user
+            flex-direction: column
+            justify-content: center
+        &-bottom
             display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 78px
+            padding-top: 30px
+            &--visible
+                display: block
+        &-menu
+            flex-direction: column
+
+            &__item
+                margin-bottom: 20px
+                &--mobile
+                    &--visible
+                        display: block
+        &__mobile
+            &--fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+
+                z-index: 99
     .logo
         width: 99px
     .menu
@@ -917,9 +950,7 @@
 
         &-button:focus
             outline: none
-    .navbar
-        &__search, &-menu, &__user
-            display: none
+
     .swiper-container
         height: 250px
         max-width: 100%
@@ -1317,6 +1348,9 @@
             height: 400px
 
 @media( max-width: 400px )
+    .navbar
+        &__search
+            max-width: 95%
     .newsletter
         position: relative
         padding-top: 0
@@ -1425,6 +1459,9 @@
         max-width: 530px
 
 @media( max-width: 340px )
+    .navbar
+        &__search
+            max-width: 90%
     .footer
 
         &-wrapper
@@ -1458,9 +1495,7 @@
 
     .container
         max-width: 280px
-    .navbar
-        &-top
-            padding: 26px 0
+
     .logo
         &__image
             height: 13px
