@@ -3,117 +3,172 @@
     color: $light
     padding-top: 108px
     padding-bottom: 46px
-    &__icon
-        margin-right: 20px
-        &--wrapper
-            min-width: 40px
+    &__button
+        min-width: 160px
+        min-height: 50px
+        padding: 18px
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #fff
+        background-color: #EC1F46
+        border-radius: 4px
+        border: none
+        cursor: pointer
+    &__button:focus
+
+        outline-width: 0
+    &__button:hover
+        background-image: linear-gradient(to right, #9EEFE1 0%, #f03030 51%, #9EEFE1 100%)
+        background-size: 200% auto
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1)
+        transition: .5s
+        background-position: right center
+    &-wrapper
+        display: grid
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-gap: 20px
+        grid-auto-rows: minmax(40px, min-content)
+        align-items: start
     &__logo
-        grid-row: 1 / 3
         width: 166px
-        align-self: start
-        height: 192px
-        margin-top: 31px
+        grid-row: 1 / 3
+        align-self: stretch
     &__categories
         grid-row: 1 / 4
-    &__legal
-        margin-left: 66px
     &__social
-        &-network
-            grid-row: 2 / 4
-            grid-column: span 2
-            display: flex
-            align-content: center
-
         &-links
             display: flex
-            min-width: 83px
             align-items: center
+            min-width: 83px
             justify-content: space-between
+        &-network
+            display: flex
+            align-items: start
+            grid-row: 2 / 4
+            grid-column: span 2
+    &__legal
+        justify-self: flex-end
     &__contact
         &-details
             grid-column: span 2
         &-form
             grid-column: span 2
-            //display: flex
-            //justify-content: space-between
-            //flex-direction: column
+    &-form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        fles-wrap: wrap
+    &__ul
+        margin: 0
+        padding: 0
+        list-style: none
+        &__list
+            display: flex
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        margin: 0 0 16px 0
+        text-transform: uppercase
+        &--mb-1
+            margin-bottom: 34px
+        &--mb-2
+            margin-top: 10px
+            margin-bottom: 23px
+
+        &--inline
+            margin: 0 43px 0 0
+
+    &__item
+        display: flex
+        align-items: flex-start
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+        color: #BDBDBD
+        &--mb-2
+            margin-bottom: 23px
+        &__list
+            margin-right: 12px
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #FFFFFF
+    &__icon
+        &-wrapper
+            min-width: 40px
+    &__block
+        text-decoration: none
+    &__text
+        color: #BDBDBD
+        margin-top: 0
+        margin-bottom: 22px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+    &__link
+        text-decoration: none
+        color: inherit
+    &__link:hover
+        color: #fff
+
+    &__input
+        background: #FFFFFF
+        border-radius: 4px
+        border: none
+        padding: 0 23px
+        height: 50px
+        display: block
+        width: 100%
+        &-group
+            display: flex
+            justify-content: space-between
+        &-fild
+            width: 47%
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            margin-bottom: 15px
     &__info
+        order: 2
+        align-self: center
         font-style: normal
         font-weight: bold
         font-size: 12px
         line-height: 15px
         color: #E0E0E0
-    &__form
+.message
+
+    font-size: 12px
+    line-height: 15px
+    resize: none
+    width: 100%
+    background-color: #fff
+    border-radius: 4px
+    padding: 18px 23px
+    border: none
+
+    flex-basis: 100%
+    margin-bottom: 23px
+    height: 123px
+    font-style: normal
+    font-weight: normal
+.footer
+    &-item
         display: flex
-        align-items: center
         justify-content: space-between
-        flex-wrap: wrap
-    &-wrapper
-        display: grid
-        align-items: start
-        grid-template-columns: repeat(4, minmax(min-content, 1fr))
-        grid-auto-rows: minmax(40px, min-content)
-        grid-gap: 24px
-
-    &__ul
-        padding: 0
-        margin: 0
-        list-style: none
-    &__item
+        width: 100%
+        align-items: center
+    &__payment
+        margin-left: 120px
         display: flex
-        align-items: flex-start
-        font-style: normal
-        font-weight: bold
-        font-size: 14px
-        line-height: 160%
-        color: #bdbdbd
-        &--mb-2
-            margin-bottom: 20px
-    &__text
-        color: #bdbdbd
-        margin-bottom: 22px
-    &__link
-        text-decoration: none
-        color: inherit
-    &__title
-        font-size: 18px
-        line-height: 23px
-        text-transform: uppercase
-        margin-top: 0
-        margin-bottom: 16px
-
-        color: #FFFFFF
-        &--inline
-            margin: 0 43px 0 0
-        &--mb-3
-            margin-bottom: 25px
-        &--mt
-            margin-top: -10px
-            margin-bottom: 29px
-
-    &__input
-        background-color: #fff
-        border-radius: 4px
-        border: none
-        padding: 0 23px
-        height: 50px
-        margin-bottom: 15px
-        flex-basis: 48%
-    &__message
-        background-color: #fff
-        border-radius: 4px
-        border: none
-        padding: 18px 23px
-        flex-basis: 100%
-        margin-bottom: 23px
-        resize: none
-    &__button
-        min-width: 160px
-        min-height: 50px
-        padding: 18px
-        font-size: 12px
-        line-height: 15px
-        color: $light
-        background-color: $primary-color
-        border-radius: 4px
-        border: none
+        justify-content: space-between
+        margin-top: 70px
+        grid-column: 2/5

@@ -1,5 +1,5 @@
 .activities
-    padding: 60px 0 98px 0
+    padding: 60px 0 100px 0
     &__title
         font-style: normal
         font-weight: bold
@@ -66,8 +66,13 @@
         color: #FFFFFF
         cursor: pointer
     &__button:focus
-        font-size: 8px
-        padding: 5px 15px
+
         outline-width: 0
+    &__button:hover
+        background-image: linear-gradient(to right, #9EEFE1 0%, #f03030 51%, #9EEFE1 100%)
+        background-size: 200% auto
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1)
+        transition: .5s
+        background-position: right center
 #ct4
     width: 200px
